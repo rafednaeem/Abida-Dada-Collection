@@ -19,7 +19,6 @@ const Header: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center text-white">
         <nav className="hidden md:flex space-x-8 text-xs uppercase tracking-[0.2em] font-medium">
-          <a href="#" className="hover:text-gold transition-colors">Home</a>
           <a href="#collection" className="hover:text-gold transition-colors">Collection</a>
         </nav>
 
