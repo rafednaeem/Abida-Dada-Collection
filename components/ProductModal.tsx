@@ -63,30 +63,32 @@ const ProductModal: React.FC<ProductModalProps> = ({ item, onClose }) => {
         </div>
 
         {/* Right Side: Details */}
-        <div className="w-full md:w-2/5 p-8 md:p-12 overflow-y-auto no-scrollbar flex flex-col bg-[#FAFAF9]">
-          <div className="mb-auto">
-            <p className="text-[10px] uppercase tracking-[0.3em] text-[#CA8A04] font-bold mb-4 font-sans">{item.category}</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight serif text-primary">{item.title}</h2>
-            <div className="w-12 h-px bg-primary/20 mb-8"></div>
-            <p className="text-secondary font-light leading-relaxed mb-8 italic font-serif">
-              "{item.description}"
-            </p>
+        <div className="w-full md:w-2/5 flex flex-col bg-[#FAFAF9]">
+          <div className="flex-grow overflow-y-auto no-scrollbar p-8 md:p-12">
+            <div className="mb-auto">
+              <p className="text-[10px] uppercase tracking-[0.3em] text-[#CA8A04] font-bold mb-4 font-sans">{item.category}</p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight serif text-primary">{item.title}</h2>
+              <div className="w-12 h-px bg-primary/20 mb-8"></div>
+              <p className="text-secondary font-light leading-relaxed mb-8 italic font-serif">
+                "{item.description}"
+              </p>
 
-            <div className="space-y-6">
-              <h4 className="text-xs uppercase tracking-widest font-bold font-sans text-primary">Key Details</h4>
-              <ul className="space-y-3">
-                {item.details.map((detail, idx) => (
-                  <li key={idx} className="flex items-center text-sm text-secondary font-light font-sans">
-                    <span className="w-1.5 h-1.5 bg-[#CA8A04] rounded-full mr-4"></span>
-                    {detail}
-                  </li>
-                ))}
-              </ul>
+              <div className="space-y-6">
+                <h4 className="text-xs uppercase tracking-widest font-bold font-sans text-primary">Key Details</h4>
+                <ul className="space-y-3">
+                  {item.details.map((detail, idx) => (
+                    <li key={idx} className="flex items-center text-sm text-secondary font-light font-sans">
+                      <span className="w-1.5 h-1.5 bg-[#CA8A04] rounded-full mr-4"></span>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div className="mt-12 space-y-4">
-            <div className="flex justify-between items-center py-4 border-y border-gray-200">
+          <div className="p-8 md:p-12 pt-6 border-t border-gray-200 space-y-4 bg-[#FAFAF9]">
+            <div className="flex justify-between items-center py-4 border-b border-gray-200">
               <span className="text-xs uppercase tracking-widest font-bold font-sans text-primary">Consultation</span>
               <span className="text-sm font-semibold text-[#CA8A04] font-sans">Price on Request</span>
             </div>
