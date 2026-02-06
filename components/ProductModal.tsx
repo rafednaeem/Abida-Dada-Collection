@@ -18,6 +18,12 @@ const ProductModal: React.FC<ProductModalProps> = ({ item, onClose }) => {
     setMousePos({ x, y });
   };
 
+  const handleWhatsAppInquiry = () => {
+    const phoneNumber = "923202200100";
+    const text = encodeURIComponent(`Assalam o Alaikum, I am interested in inquiring about "${item.title}" from your collection.`);
+    window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+  };
+
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8">
       {/* Backdrop */}
@@ -92,7 +98,10 @@ const ProductModal: React.FC<ProductModalProps> = ({ item, onClose }) => {
               <span className="text-xs uppercase tracking-widest font-bold font-sans text-primary">Consultation</span>
               <span className="text-sm font-semibold text-[#CA8A04] font-sans">Price on Request</span>
             </div>
-            <button className="w-full bg-primary text-white py-5 text-xs uppercase tracking-[0.3em] hover:bg-black transition-colors shadow-lg font-sans">
+            <button
+              onClick={handleWhatsAppInquiry}
+              className="w-full bg-primary text-white py-5 text-xs uppercase tracking-[0.3em] hover:bg-black transition-colors shadow-lg font-sans"
+            >
               Inquire via WhatsApp
             </button>
             <p className="text-[10px] text-gray-400 text-center uppercase tracking-widest pt-2 font-sans">
