@@ -28,8 +28,8 @@ const Footer: React.FC = () => {
           <h4 className="text-xs uppercase tracking-widest font-bold text-[#CA8A04] font-sans">Boutique</h4>
           <ul className="space-y-4 text-sm text-gray-400 font-light font-sans">
             <li>By Appointment Only</li>
-            <li>Gulberg III, Lahore, Pakistan</li>
-            <li>+92 300 0000000</li>
+            <li>G 29, Block 8 Clifton, Karachi, 75600, Pakistan</li>
+            <li>+92 320 2200100</li>
           </ul>
         </div>
       </div>

@@ -46,7 +46,7 @@ const LuminaGallery: React.FC<LuminaGalleryProps> = ({ items, onItemClick }) => 
         const initApplication = async () => {
             const SLIDER_CONFIG: any = {
                 settings: {
-                    transitionDuration: 2.0, autoSlideSpeed: 6000, currentEffect: "glass",
+                    transitionDuration: 2.0, autoSlideSpeed: 3000, currentEffect: "glass",
                     globalIntensity: 1.0, speedMultiplier: 1.0, distortionStrength: 1.0,
                     glassRefractionStrength: 1.0, glassChromaticAberration: 0.8, glassBubbleClarity: 1.0, glassEdgeGlow: 0.5, glassLiquidFlow: 0.4
                 }
